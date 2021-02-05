@@ -8,7 +8,7 @@ There are two type of datatypes
 1. primitive datatype
 2. non-primitive datatype
 
-* The primitive datatypes are given below:
+The primitive datatypes are given below:
 
 1. ```Number```  for number. integers are limited by ±(253-1).
 2. ```BigInt```  is for integer numbers of arbitrary length.
@@ -64,3 +64,70 @@ While ```var``` and ```let``` can be declared without being initialized, ```cons
 #### confirm
 
 ```confirm()``` shows a message and waits for the user to press “OK” or “Cancel”. It returns ```true``` for OK and ```false``` for Cancel/Esc.
+
+
+### Type Conversion
+
+#### String Conversion
+JavaScript Variables can be converted to another data types either by automatically js itself or by the use of js function.
+```String()``` method converts any values to string.
+
+```
+let num = 5
+typeof num // number
+
+num = String(num)
+typeof num // String
+```
+
+#### Numeric Conversion
+
+In mathematical expression the conversion happen automatically.
+```
+"8"/"2" //4, strings are automatically converted to numbers
+```
+Using ```Number()``` method we convert value to number.
+
+```
+let name = "57"
+typeof name //string
+
+name = Number(name)
+typeof name //number
+```
+
+when we try to convert any invalid string to number than it will give NaN as a result.
+```
+Number("john") //NaN
+Number(null) //0
+Number(undefined) //NaN
+```
+
+#### Boolean Conversion
+
+Values that are “empty”, like 0, an empty string, null, undefined, and NaN, become false.
+Other values become true.
+
+```
+Boolean(1); // true
+Boolean(0); // false
+
+Boolean("hello"); // true
+Boolean(""); // false
+
+Boolean("0") //True, in js non-empty string returns always true
+```
+
+### Object.is(value1, value2)
+
+This method compares the both value are same or not.
+```Object.is()``` method is same as ```===```.
+The difference between both the method is ```===``` method treats ```-0``` and ```+0``` as same while ```Object.is()``` method treat as different.
+
+```
+-0 === +0 //true
+Object.is(-0, +0) //false
+
+NaN === NaN //false
+Object.is(NaN, NaN) //true
+```
