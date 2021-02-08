@@ -10,7 +10,7 @@ There are two type of datatypes
 
 The primitive datatypes are given below:
 
-1. ```Number```  for number. integers are limited by ±(253-1).
+1. ```Number```  for number
 2. ```BigInt```  is for integer numbers of arbitrary length.
 3. ```String``` for string.
 4. ```Boolean``` for ```true/false```
