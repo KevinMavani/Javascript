@@ -72,7 +72,7 @@ While ```var``` and ```let``` can be declared without being initialized, ```cons
 JavaScript Variables can be converted to another data types either by automatically js itself or by the use of js function.
 ```String()``` method converts any values to string.
 
-```
+```JavaScript
 let num = 5
 typeof num // number
 
@@ -88,7 +88,7 @@ In mathematical expression the conversion happen automatically.
 ```
 Using ```Number()``` method we convert value to number.
 
-```
+```JavaScript
 let name = "57"
 typeof name //string
 
@@ -97,7 +97,7 @@ typeof name //number
 ```
 
 when we try to convert any invalid string to number than it will give NaN as a result.
-```
+```JavaScript
 Number("john") //NaN
 Number(null) //0
 Number(undefined) //NaN
@@ -108,7 +108,7 @@ Number(undefined) //NaN
 Values that are “empty”, like 0, an empty string, null, undefined, and NaN, become false.
 Other values become true.
 
-```
+```JavaScript
 Boolean(1); // true
 Boolean(0); // false
 
@@ -124,7 +124,7 @@ This method compares whether the both value are same or not.
 ```Object.is()``` method is same as ```===```.
 The difference between both the method is ```===``` method is that  ```-0``` and ```+0``` are strictly equal but not same value.
 
-```
+```JavaScript
 -0 === +0 //true
 Object.is(-0, +0) //false
 
