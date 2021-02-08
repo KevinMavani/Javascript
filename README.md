@@ -120,9 +120,9 @@ Boolean("0") //True, in js non-empty string returns always true
 
 ### Object.is(value1, value2)
 
-This method compares the both value are same or not.
+This method compares whether the both value are same or not.
 ```Object.is()``` method is same as ```===```.
-The difference between both the method is ```===``` method treats ```-0``` and ```+0``` as same while ```Object.is()``` method treat as different.
+The difference between both the method is ```===``` method is that  ```-0``` and ```+0``` are strictly equal but not same value.
 
 ```
 -0 === +0 //true
