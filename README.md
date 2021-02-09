@@ -1,7 +1,7 @@
 # Javascript_Documentation
 
 ### Introduction
-JavaScript is non-blocking, asynchoronous(when task is taking time for processing at that time other lines of code executed and this task is run in background) programming language and it's easy to learn.
+JavaScript is asynchoronous(when task is taking time for processing at that time other lines of code executed and this task is run in background) programming language and it's easy to learn.
 
 ### Datatypes
 There are two type of datatypes
